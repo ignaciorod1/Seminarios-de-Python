@@ -9,24 +9,24 @@ En esta parte veremos distintos tipos de variables, empezando por las más senci
 o próximas a los tipos utilizados en otros lenguajes y acabando en estructuras más
 especiales y propias de Python:
 
--Comentarios y miscelánea
--Booleanos
--Enteros
--Decimales
--Imaginarios
--Cadenas de caracteres y funciones
--Listas
--Tuplas
--Diccionarios
+* Comentarios y miscelánea
+* Booleanos
+* Enteros
+* Decimales
+* Imaginarios
+* Cadenas de caracteres y funciones
+* Listas
+* Tuplas
+* Diccionarios
 
 
 ## Parte 2
 En esta parte veremos los bucles y funciones, además de retomar el conocimiento
 adquirido en la parte 1 para recorrer listas con bucles for:
 
--Lógica booleana
--Sentencias if, elif, else
--range()
--Bucles for
--Bucles while
--Funciones (sin argumento, con argumento, con argumentos por defecto)
+* Lógica booleana
+* Sentencias if, elif, else
+* range()
+* Bucles for
+* Bucles while
+* Funciones (sin argumento, con argumento, con argumentos por defecto)
