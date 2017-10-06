@@ -1,15 +1,15 @@
-#Seminario 1
+# Seminario 1
 
-En este seminario veremos quÈ es Python (a grandes rasgos), cÛmo funciona,
-y programaremos nuestras primeras lÌneas de cÛdigo. Asimismo estudiaremos
-los bucles, la funciÛn range(), if-elif-else y funciones b·sicas.
+En este seminario veremos qu√© es Python (a grandes rasgos), c√≥mo funciona,
+y programaremos nuestras primeras l√≠neas de c√≥digo. Asimismo estudiaremos
+los bucles, la funci√≥n range(), if-elif-else y funciones b√°sicas.
 
 ## Parte 1
-En esta parte veremos distintos tipos de variables, empezando por las m·s sencillas
-o prÛximas a los tipos utilizados en otros lenguajes y acabando en estructuras m·s
+En esta parte veremos distintos tipos de variables, empezando por las m√°s sencillas
+o pr√≥ximas a los tipos utilizados en otros lenguajes y acabando en estructuras m√°s
 especiales y propias de Python:
 
--Comentarios y miscel·nea
+-Comentarios y miscel√°nea
 -Booleanos
 -Enteros
 -Decimales
@@ -21,10 +21,10 @@ especiales y propias de Python:
 
 
 ## Parte 2
-En esta parte veremos los bucles y funciones, adem·s de retomar el conocimiento
+En esta parte veremos los bucles y funciones, adem√°s de retomar el conocimiento
 adquirido en la parte 1 para recorrer listas con bucles for:
 
--LÛgica booleana
+-L√≥gica booleana
 -Sentencias if, elif, else
 -range()
 -Bucles for
