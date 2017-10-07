@@ -1,8 +1,11 @@
 # Seminario 1
 
+¡Empieza nuestra aventura con Python!
 En este seminario veremos qué es Python (a grandes rasgos), cómo funciona,
 y programaremos nuestras primeras líneas de código. Asimismo estudiaremos
 los bucles, la función range(), if-elif-else y funciones básicas.
+
+### Material adicional: http://hacklabupm.bq.com/doku.php?id=seminarios:python1
 
 ## Parte 1
 En esta parte veremos distintos tipos de variables, empezando por las más sencillas
