@@ -11,3 +11,4 @@ Esperamos que lo disfrutéis :)
 
 
 ### ¿Quiénes somos? https://twitter.com/HackLab_UPM
+### Material adicional: http://hacklabupm.bq.com/doku.php?id=start
