@@ -1,32 +1,43 @@
 
  # PYTHON CLASS 10/10/2017
+ #---------------------------------------------------------------------	 IMPORT -------------------------------------------------------------------
+ 
+
+import time
+from time import *
+from math import pi
+import RPi.GPIO as esparrago
+
+
  
  #---------------------------------------------------------------------		ENTRADA POR TECLADO ------------------------------------------
+'''
+print ("Cual es la respuesta a la vida, el universo y todo lo demas?")
 
-#print ("Cual es la respuesta a la vida, el universo y todo lo demas?")
+anworte = input()
 
-#anworte = input()
+print(type(anworte))
+print ("La respuesta es ", anworte)
+'''
+# OTRA FORMA MAS OPTIMA ES INTRODUCIR EL PRINT COMO ARGUMENTO DEL INPUT
+'''
+javiesunpesao = input("Cual es la respuesta a la vida, el universo y todo lo demas?\n")
 
-#print ("La respuesta es ", anworte)
-
-# OTRA FORMA MÁS ÓPTIMA ES INTRODUCIR EL PRINT COMO ARGUMENTO DEL INPUT
-
-#input("Cual es la respuesta a la vida, el universo y todo lo demas?")
-
-
+print(javiesunpesao)
+'''
 # STRINGS
+'''
+name = input("Como se llama el perro de Hora de Aventuras?")
 
-#name = input("Como se llama el perro de Hora de Aventuras?")
-
-#print ("El perro de Hora de Aventuras se llama", name)
-
+print ("El perro de Hora de Aventuras se llama", name)
+'''
 # CONVERSION DE TIPOS EN EL INPUT()
+'''
+cantidad_int = int(input("Insterte un numero no entero de lechuzas: "))	#	INT
 
-#cantidad_int = int(input("Insterte un numero entero de lechuzas: "))	#	INT
+print ("Han sido ejecutadas ", cantidad_int, 'lechuzas')
 
-#print ("Han sido ejecutadas ", cantidad_int, 'lechuzas')
-
-
+'''
 
 #cantidad_float = int(input("Insterte un numero decimal de llaves allen "))	#	FLOAT MAL
 
@@ -40,23 +51,26 @@
 
 
 #----------------------------------------------------------------------	CLASES		-------------------------------------------------------------------------------
+'''
 
+class MyClass:
+	"""Info"""
 
-#class MyClass:
-#		"""Info""""
-#		<declaración>
-"""
 class Complex:
+	"""Complex class"""
 	def __init__(self, a,b):		# CONSTRUCTOR
 		self.r = a						# VARIABLES DE LA CLASE 
 		self.imag = b
+		print("Clase construida")
 		
 	def show(self):
 		print(self.r, '+ j', self.imag)
 	
 n = Complex(2, 5)			# HEMOS CREADO UN OBJETO INSTANCIA LLAMADO 'n'
+p = Complex(2, 5)	
 n.show()
-"""
+print(n.__doc__)
+'''
 #	----*****---- SE PUEDEN CREAR VARIABLES PARA UN OBJETO INSTANCIA FUERA DE LA CLASE
 '''
 class Buch:
@@ -64,17 +78,25 @@ class Buch:
 	def __init__(self, name):
 		self.name = name
 		
+	def __init__(self, name, b):
+		self.name = name
+		self.pages = b
+		
 	def show(self):
-		print('Mein buch ist ', self.name, 'und er hat', pages, 'pages')
+		print('Mein buch ist ', self.name, 'und er hat', self.pages)
 
-got = Buch('Game of Thrones')		
+got = Buch('Game of Thrones', 54)		
 got.show()
 
-got.pages = 998			#  ÚTIL PARA HACER CONTADORES QUE RECORRAN LA CLASE . 
+Buch.pages = 998			#  UTIL PARA HACER CONTADORES QUE RECORRAN LA CLASE . 
 print(got.pages)
-'''
 
-# Se definen en las clases los métodos con los atributos que se van a manejar y los atributos se declaran fuera de la clase
+asdf = Buch('Emm', 9)		
+asdf.show()
+asdf.pages = 321
+asdf.show()
+'''
+# Se definen en las clases los mEtodos con los atributos que se van a manejar y los atributos se declaran fuera de la clase
 '''
 class Buch:
 	
@@ -90,8 +112,8 @@ class Buch:
 
 
 hitchhickers = Buch()
-hitchhickers.name = input()
-hitchhickers.pages = input('Wie viele seiten dein buch hat?')
+hitchhickers.name = input('"Cual es el nombre del libro?"')
+hitchhickers.pages = input("Wie viele seiten dein buch hat?")
 hitchhickers.show()
 
 
@@ -102,7 +124,28 @@ print (hacklab_diaries.personajes[2])
 
 
 '''
+#-----------------
 
+#COSAS TOPE EXTREMAS
+
+class Base:
+	def __init__(self, name):
+		self.name = name
+		print("clase base construida")
+		
+class Derivada(Base):
+	def __init__(self, name, n):
+		self.num = n		
+		print("clase derivada construida")
+	def print(self):
+		print(self.num)
+
+x = Derivada("Jon Snow", 42)
+print(x)
+
+#Base.atr_nuevo = 23
+
+#print(x.atr_nuevo)
 
 
 
